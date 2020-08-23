@@ -21,7 +21,7 @@ body {
 }
 
 .image .container .image-info p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2.8rem;
   letter-spacing: 1px;
 }
@@ -37,7 +37,7 @@ body {
   letter-spacing: 0.4px;
   display: flex;
   list-style: none;
-  padding: 5.3% 0 0;
+  padding: 8.3% 0 0;
 }
 
 .image .container .image-info ul a:hover {
@@ -61,8 +61,12 @@ body {
     flex-direction: column-reverse;
   }
   .image .container .image-info {
-    padding-right: 3%;
     padding-top: 20%;
+  }
+  .image .container .image-info p {
+    letter-spacing: 0.8px;
+    font-size: 19px;
+    line-height: 2.3rem;
   }
   .image .container .image-preview img {
     width: 100%;
