@@ -789,13 +789,26 @@ footer .footer-links ul li a:hover {
   .skills .container {
     display: block;
   }
+  .skills .container .skills-left p {
+    letter-spacing: 0.8px;
+    font-size: 19px;
+    line-height: 2.3rem;
+  }
+  .skills .container .skills-right .skillset p {
+    font-size: 17.12px;
+    letter-spacing: 0.8px;
+    line-height: 2.4rem;
+  }
   /*Contact*/
+  .contact {
+    padding: 3.7rem 0 2rem;
+  }
   .contact .contact-left {
     width: 100%;
   }
   .contact .contact-left h2 {
     font-size: 1.56em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .contact .contact-right {
     font-size: 1.1em;
