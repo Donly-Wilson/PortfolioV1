@@ -721,9 +721,10 @@ footer .footer-links ul li a:hover {
     margin-bottom: 3.5em;
   }
   .services .services-title p {
-    font-size: 1rem;
-    line-height: 1em;
     margin-bottom: 0.7em;
+    font-size: 1.07rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.8px;
   }
   .services .services-title h1 {
     font-size: 1.55rem;
@@ -774,6 +775,10 @@ footer .footer-links ul li a:hover {
   }
   .work .work-projects .work-technologys .work-technologys__tools {
     width: 100%;
+  }
+  /*Skills*/
+  .skills .container {
+    display: block;
   }
   /*Contact*/
   .contact .contact-left {
