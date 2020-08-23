@@ -712,6 +712,8 @@ footer .footer-links ul li a:hover {
   .intro .intro-text p {
     margin-bottom: 10px;
     letter-spacing: 0.8px;
+    font-size: 1.08em;
+    line-height: 1.9rem;
   }
   /* Services I Offer */
   .services {
@@ -722,9 +724,9 @@ footer .footer-links ul li a:hover {
   }
   .services .services-title p {
     margin-bottom: 0.7em;
-    font-size: 1.07rem;
-    line-height: 1.6rem;
     letter-spacing: 0.8px;
+    font-size: 19px;
+    line-height: 2.3rem;
   }
   .services .services-title h1 {
     font-size: 1.55rem;
@@ -771,7 +773,8 @@ footer .footer-links ul li a:hover {
     margin-top: 0;
   }
   .work .work-projects .work-technologys {
-    margin: 0;
+    margin: 85px 0 0 0;
+    width: 97.2vw;
   }
   .work .work-projects .work-technologys .work-technologys__tools {
     width: 100%;
@@ -780,6 +783,9 @@ footer .footer-links ul li a:hover {
     width: 25px;
   }
   /*Skills*/
+  .skills {
+    padding-top: 6.76rem;
+  }
   .skills .container {
     display: block;
   }
