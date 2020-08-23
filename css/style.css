@@ -742,8 +742,7 @@ footer .footer-links ul li a:hover {
   }
   /* Latest Work */
   .work {
-    padding-top: 6.75rem;
-    padding-bottom: 8.75rem;
+    padding-top: 3.75rem;
   }
   .work .container {
     width: auto;
@@ -752,29 +751,33 @@ footer .footer-links ul li a:hover {
     padding: 0;
     text-align: center;
   }
-  .work .work-text span {
-    font-size: 1rem;
-  }
   .work .work-text h3 {
     font-size: 1.6rem;
     margin-top: 1rem;
   }
   .work .work-projects {
     /* margin: 3rem 0; */
+    display: block;
     padding-top: 6.7rem;
+  }
+  .work .work-projects .projects {
+    width: fit-content;
   }
   .work .work-projects .projects .projects__caption .projects__caption--name {
     font-size: 1.2em;
     margin-bottom: 0.6rem;
   }
   .work .work-projects .projects:nth-child(2n) {
-    margin-top: -5.6rem;
+    margin-top: 0;
   }
   .work .work-projects .work-technologys {
     margin: 0;
   }
   .work .work-projects .work-technologys .work-technologys__tools {
     width: 100%;
+  }
+  .work .work-projects .work-technologys .work-technologys__tools .tool img {
+    width: 25px;
   }
   /*Skills*/
   .skills .container {
