@@ -11,7 +11,6 @@
 }
 
 body {
-  background: linear-gradient(0deg, #262626 0%, white 89%);
   font-family: "Lato", sans-serif;
   color: #3b3a3a;
 }
@@ -20,8 +19,9 @@ body h1,
 body h2,
 body h3,
 body h4 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Lato", sans-serif;
   letter-spacing: 2px;
+  font-weight: 500;
 }
 
 body section {
@@ -33,7 +33,7 @@ a {
   padding: 0;
   list-style: none;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
+  color: #3b3a3a;
   transition: all 200ms linear;
 }
 
@@ -140,6 +140,7 @@ a {
   justify-content: flex-start;
   align-items: stretch;
   flex-direction: row;
+  padding: 12rem 0 7rem;
 }
 
 .intro .container {
@@ -152,11 +153,14 @@ a {
 .intro h1 {
   font-size: 2.5rem;
   line-height: 4rem;
+  font-size: 38px;
 }
 
 .intro .intro-text {
   font-size: 1.5rem;
   line-height: 3.5rem;
+  font-size: 22px;
+  letter-spacing: 1px;
 }
 
 .intro .intro-text a {
@@ -174,29 +178,31 @@ a {
 }
 
 .services .services-title {
-  margin-bottom: 7.3em;
+  margin-bottom: 6.3em;
   align-self: self-start;
 }
 
 .services .services-title span {
   font-size: 1.3rem;
-  color: #ffffff;
-  background-color: #a463f2;
+  text-transform: capitalize;
+  color: #c9c9c9;
   padding-right: 20px;
 }
 
 .services .services-title p {
-  text-transform: capitalize;
   font-size: 1.5rem;
+  font-size: 22px;
   line-height: 1.6em;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.1px;
   margin-bottom: 0.75em;
 }
 
 .services .services-title h1 {
   text-transform: capitalize;
   font-size: 2.2rem;
+  font-size: 35px;
   line-height: 4rem;
+  margin-top: 0.4rem;
   margin-bottom: 1rem;
 }
 
@@ -206,7 +212,6 @@ a {
   align-items: stretch;
   flex-direction: row;
   width: 100%;
-  margin-left: 11%;
 }
 
 .services .services-offer .services-offer__card {
@@ -215,9 +220,8 @@ a {
   align-items: normal;
   flex-direction: column;
   height: 14em;
-  width: 23.2em;
+  width: 23.5em;
   padding: 0.6em;
-  color: rgba(0, 0, 0, 0.7);
   border-left: 0.5px solid transparent;
   transition: 0.4s;
   transform: scale(1);
@@ -226,13 +230,15 @@ a {
 
 .services .services-offer .services-offer__card h2 {
   font-size: 1.7em;
+  font-size: 24px;
 }
 
 .services .services-offer .services-offer__card p {
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   font-size: 1.5rem;
+  font-size: 20px;
   line-height: 2.4rem;
-  padding-top: 0.8em;
+  padding-top: 0.9em;
 }
 
 .services .services-offer .services-offer__card .icon {
@@ -272,13 +278,13 @@ a {
 
 .work .work-text span {
   font-size: 1.3rem;
-  color: #ffffff;
-  background-color: #a463f2;
+  color: #c9c9c9;
   padding-right: 20px;
 }
 
 .work .work-text h3 {
   font-size: 2.7rem;
+  font-size: 35px;
   margin-top: 1rem;
 }
 
@@ -291,7 +297,7 @@ a {
   margin: auto;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  padding-top: 3.7rem;
+  padding-top: 5.7rem;
 }
 
 .work .work-projects .projects {
@@ -314,18 +320,16 @@ a {
 }
 
 .work .work-projects .projects .projects__image {
-  border-radius: 10px;
   margin-bottom: 1.5rem;
   width: 100%;
   height: auto;
   position: relative;
   transition: 0.4s;
   overflow: hidden;
-  box-shadow: 0 24px 24px rgba(0, 0, 0, 0.16);
 }
 
 .work .work-projects .projects .projects__image:hover {
-  border-radius: 10px;
+  border-radius: 2px;
   transform: scale(0.95);
   transition: 0.4s;
   width: 100%;
@@ -359,20 +363,21 @@ a {
   transition: opacity 0.5s;
 }
 
-.work .work-projects .projects .projects__image .projects__image--description span {
-  font-size: 2em;
-  padding-bottom: 20px;
+.work .work-projects .projects .projects__image .projects__image--description h3 {
+  font-size: 32px;
+  line-height: 2.4em;
 }
 
 .work .work-projects .projects .projects__image .projects__image--description p {
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 1px;
-  line-height: 23px;
+  line-height: 2.3rem;
   padding-left: 17px;
 }
 
 .work .work-projects .projects .projects__caption .projects__caption--name {
   font-size: 1.7em;
+  font-size: 24px;
   margin-bottom: 0.6rem;
 }
 
@@ -424,9 +429,8 @@ a {
 .work .work-projects .work-technologys .work-technologys__tools {
   width: 46%;
   padding: 0.7rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 4px 0 0 4px;
-  box-shadow: 0 24px 24px rgba(0, 0, 0, 0.17);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2px 0 0 2px;
   z-index: 1;
 }
 
@@ -441,8 +445,59 @@ a {
   transform: translateY(-6px);
 }
 
+/*Skills*/
+.skills .container {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-direction: row;
+}
+
+.skills .container .skills-left {
+  flex-basis: 50%;
+  padding: 0 1.75rem;
+}
+
+.skills .container .skills-left span {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: #c9c9c9;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+
+.skills .container .skills-left p {
+  font-size: 24px;
+  line-height: 2.6rem;
+  letter-spacing: 1.1px;
+  padding-top: 20px;
+}
+
+.skills .container .skills-right {
+  flex-basis: 50%;
+  padding: 0 1.75rem;
+  margin-top: 51px;
+}
+
+.skills .container .skills-right .skillset {
+  padding-bottom: 74px;
+  font-size: 24px;
+}
+
+.skills .container .skills-right .skillset h4 {
+  font-weight: 500;
+  padding: 0 0 20px 0;
+}
+
+.skills .container .skills-right .skillset p {
+  font-size: 20px;
+  line-height: 2.3rem;
+  letter-spacing: 1px;
+}
+
 /*Contact*/
 .contact {
+  background-color: #262626;
   height: 100%;
   padding: 4.7rem 0;
 }
@@ -461,12 +516,14 @@ a {
 .contact .contact-right {
   align-self: flex-start;
   font-size: 1.5em;
+  font-size: 22px;
+  letter-spacing: 1px;
   line-height: 2.4rem;
 }
 
 .contact h2 {
   color: #c9c9c9;
-  font-size: 2.7em;
+  font-size: 38px;
 }
 
 .contact p {
@@ -480,6 +537,7 @@ a {
 
 /*Footer*/
 footer {
+  background-color: #262626;
   height: auto;
   display: flex;
   align-items: center;
@@ -509,7 +567,7 @@ footer .footer-links ul {
   padding: 0;
   list-style: none;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
+  color: #3b3a3a;
 }
 
 footer .footer-links ul li {
@@ -654,6 +712,8 @@ footer .footer-links ul li a:hover {
   .intro .intro-text p {
     margin-bottom: 10px;
     letter-spacing: 0.8px;
+    font-size: 1.08em;
+    line-height: 1.9rem;
   }
   /* Services I Offer */
   .services {
@@ -663,9 +723,10 @@ footer .footer-links ul li a:hover {
     margin-bottom: 3.5em;
   }
   .services .services-title p {
-    font-size: 1rem;
-    line-height: 1em;
     margin-bottom: 0.7em;
+    letter-spacing: 0.8px;
+    font-size: 19px;
+    line-height: 2.3rem;
   }
   .services .services-title h1 {
     font-size: 1.55rem;
@@ -683,8 +744,7 @@ footer .footer-links ul li a:hover {
   }
   /* Latest Work */
   .work {
-    padding-top: 6.75rem;
-    padding-bottom: 8.75rem;
+    padding-top: 3.75rem;
   }
   .work .container {
     width: auto;
@@ -693,37 +753,62 @@ footer .footer-links ul li a:hover {
     padding: 0;
     text-align: center;
   }
-  .work .work-text span {
-    font-size: 1rem;
-  }
   .work .work-text h3 {
     font-size: 1.6rem;
     margin-top: 1rem;
   }
   .work .work-projects {
     /* margin: 3rem 0; */
+    display: block;
     padding-top: 6.7rem;
+  }
+  .work .work-projects .projects {
+    width: fit-content;
   }
   .work .work-projects .projects .projects__caption .projects__caption--name {
     font-size: 1.2em;
     margin-bottom: 0.6rem;
   }
   .work .work-projects .projects:nth-child(2n) {
-    margin-top: -5.6rem;
+    margin-top: 0;
   }
   .work .work-projects .work-technologys {
-    margin: 0;
+    margin: 85px 0 0 0;
+    width: 97.2vw;
   }
   .work .work-projects .work-technologys .work-technologys__tools {
     width: 100%;
   }
+  .work .work-projects .work-technologys .work-technologys__tools .tool img {
+    width: 25px;
+  }
+  /*Skills*/
+  .skills {
+    padding-top: 6.76rem;
+  }
+  .skills .container {
+    display: block;
+  }
+  .skills .container .skills-left p {
+    letter-spacing: 0.8px;
+    font-size: 19px;
+    line-height: 2.3rem;
+  }
+  .skills .container .skills-right .skillset p {
+    font-size: 17.12px;
+    letter-spacing: 0.8px;
+    line-height: 2.4rem;
+  }
   /*Contact*/
+  .contact {
+    padding: 3.7rem 0 2rem;
+  }
   .contact .contact-left {
     width: 100%;
   }
   .contact .contact-left h2 {
     font-size: 1.56em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .contact .contact-right {
     font-size: 1.1em;

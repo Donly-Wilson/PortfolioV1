@@ -1,0 +1,74 @@
+body {
+  background: none;
+}
+
+.image .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image .container .image-info {
+  padding-right: 3%;
+}
+
+.image .container .image-info p:first-of-type {
+  color: #a463f2;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  line-height: 1.6em;
+  letter-spacing: 0.5px;
+  padding: 0.6em 0 1em;
+}
+
+.image .container .image-info p {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  letter-spacing: 1px;
+}
+
+.image .container .image-info h1 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-size: 35px;
+}
+
+.image .container .image-info ul {
+  font-size: 16.4px;
+  letter-spacing: 0.4px;
+  display: flex;
+  list-style: none;
+  padding: 8.3% 0 0;
+}
+
+.image .container .image-info ul a:hover {
+  color: #a463f2;
+  border-bottom: 1px solid;
+}
+
+.image .container .image-info ul li + li {
+  margin-left: 7%;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .image .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  .image .container .image-info {
+    padding-top: 20%;
+  }
+  .image .container .image-info p {
+    letter-spacing: 0.8px;
+    font-size: 19px;
+    line-height: 2.3rem;
+  }
+  .image .container .image-preview img {
+    width: 100%;
+  }
+}
