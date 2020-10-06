@@ -62,6 +62,7 @@ body {
   }
   .image .container .image-info {
     padding-top: 20%;
+    padding-right: 0%;
   }
   .image .container .image-info p {
     letter-spacing: 0.8px;

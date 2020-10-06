@@ -725,7 +725,7 @@ footer .footer-links ul li a:hover {
   .services .services-title p {
     margin-bottom: 0.7em;
     letter-spacing: 0.8px;
-    font-size: 19px;
+    font-size: 18.5px;
     line-height: 2.3rem;
   }
   .services .services-title h1 {
@@ -744,7 +744,7 @@ footer .footer-links ul li a:hover {
   }
   /* Latest Work */
   .work {
-    padding-top: 3.75rem;
+    padding-top: 1.75rem;
   }
   .work .container {
     width: auto;
@@ -791,7 +791,7 @@ footer .footer-links ul li a:hover {
   }
   .skills .container .skills-left p {
     letter-spacing: 0.8px;
-    font-size: 19px;
+    font-size: 18.5px;
     line-height: 2.3rem;
   }
   .skills .container .skills-right .skillset p {
