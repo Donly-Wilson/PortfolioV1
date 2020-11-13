@@ -198,12 +198,12 @@ a {
 }
 
 .services .services-title h1 {
-  text-transform: capitalize;
   font-size: 2.2rem;
   font-size: 35px;
   line-height: 4rem;
   margin-top: 0.4rem;
   margin-bottom: 1rem;
+  text-transform: capitalize;
 }
 
 .services .services-offer {
@@ -443,6 +443,10 @@ a {
 
 .work .work-projects .work-technologys .work-technologys__tools li:hover {
   transform: translateY(-6px);
+}
+
+.work .work-projects .work-technologys .work-technologys__tools .icon .icon_inverted {
+  filter: invert(1);
 }
 
 /*Skills*/
