@@ -535,8 +535,9 @@ a {
   margin-bottom: 1.5rem;
 }
 
-.contact p:last-child {
+.contact .contact-email {
   color: #a463f2;
+  margin-bottom: 1.5rem;
 }
 
 /*Footer*/
