@@ -1,0 +1,36 @@
+$primary-color: #3b3a3a;
+$secondary-color: #a463f2;
+// $secondary-color: #63d488;
+// $link-color: rgba(0, 0, 0, 0.7);
+$link-color: #3b3a3a;
+$ff-primary: "Lato", sans-serif;
+$ff-secondary: "Ubuntu", sans-serif;
+$ff-logo: "Raleway", sans-serif;
+
+//flex custom display
+@mixin d-flex($content: flex-start, $items: stretch, $direction: row) {
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  flex-direction: $direction;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: $link-color;
+}
+
+@mixin text-style(
+  $size: 16px,
+  $height: 16px,
+  $align: left,
+  $transform: initial
+) {
+  font-size: $size;
+  line-height: $height;
+  text-align: $align;
+  text-transform: $transform;
+}

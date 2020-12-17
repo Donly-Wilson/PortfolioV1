@@ -1,0 +1,75 @@
+@import "config";
+
+body {
+  background: none;
+}
+
+.image {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .image-info {
+      padding-right: 3%;
+      p:first-of-type {
+        color: $secondary-color;
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        line-height: 1.6em;
+        letter-spacing: 0.5px;
+        padding: 0.6em 0 1em;
+      }
+      p {
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        letter-spacing: 1px;
+      }
+      h1 {
+        text-transform: capitalize;
+        font-size: 2rem;
+        font-size: 35px;
+      }
+      ul {
+        font-size: 16.4px;
+        letter-spacing: 0.4px;
+        display: flex;
+        list-style: none;
+        padding: 8.3% 0 0;
+        a:hover {
+          color: #a463f2;
+          border-bottom: 1px solid;
+        }
+        li + li {
+          margin-left: 7%;
+        }
+      }
+    }
+  }
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+//Mobile
+@media (max-width: 767px) {
+  .image .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+
+    .image-info {
+      padding-top: 20%;
+      padding-right: 0%;
+      p {
+        letter-spacing: 0.8px;
+        font-size: 19px;
+        line-height: 2.3rem;
+      }
+    }
+
+    .image-preview img {
+      width: 100%;
+    }
+  }
+}
