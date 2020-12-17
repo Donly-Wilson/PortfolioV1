@@ -1,0 +1,4 @@
+*.txt
+# scss/*
+css/1st*
+Unused-img/*

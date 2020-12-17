@@ -198,12 +198,12 @@ a {
 }
 
 .services .services-title h1 {
-  text-transform: capitalize;
   font-size: 2.2rem;
   font-size: 35px;
   line-height: 4rem;
   margin-top: 0.4rem;
   margin-bottom: 1rem;
+  text-transform: capitalize;
 }
 
 .services .services-offer {
@@ -212,6 +212,7 @@ a {
   align-items: stretch;
   flex-direction: row;
   width: 100%;
+  position: relative;
 }
 
 .services .services-offer .services-offer__card {
@@ -222,10 +223,9 @@ a {
   height: 14em;
   width: 23.5em;
   padding: 0.6em;
-  border-left: 0.5px solid transparent;
-  transition: 0.4s;
-  transform: scale(1);
-  animation-timing-function: linear;
+  transition: 0.4s ease-in-out;
+  transition-property: transform;
+  transition-delay: 0.4ms;
 }
 
 .services .services-offer .services-offer__card h2 {
@@ -241,25 +241,25 @@ a {
   padding-top: 0.9em;
 }
 
-.services .services-offer .services-offer__card .icon {
-  width: 25%;
-  height: 41%;
-  opacity: 15%;
-  transition: 0.4s;
+.services .services-offer .services-offer__card::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background-color: #a463f2;
+  transition: 0.4s ease-in-out width;
+}
+
+.services .services-offer .services-offer__card:hover::before {
+  width: 15px;
 }
 
 .services .services-offer .services-offer__card:hover {
   background-color: rgba(250, 250, 250, 0.4);
-  border-left: 13px solid #a463f2;
+  transform: translateX(15px);
   box-shadow: 10px 29px 115px -27px rgba(164, 99, 242, 0.42);
-  transition: 0.4s ease-in-out all;
-  transform: scale(1.03);
-}
-
-.services .services-offer .services-offer__card:hover .icon {
-  opacity: 90%;
-  fill: #a463f2;
-  transition: 0s;
 }
 
 .services .services-offer .services-offer__card + .services-offer__card {
@@ -445,6 +445,10 @@ a {
   transform: translateY(-6px);
 }
 
+.work .work-projects .work-technologys .work-technologys__tools .icon .icon_inverted {
+  filter: invert(1);
+}
+
 /*Skills*/
 .skills .container {
   display: flex;
@@ -531,8 +535,9 @@ a {
   margin-bottom: 1.5rem;
 }
 
-.contact p:last-child {
+.contact .contact-email {
   color: #a463f2;
+  margin-bottom: 1.5rem;
 }
 
 /*Footer*/
@@ -725,7 +730,7 @@ footer .footer-links ul li a:hover {
   .services .services-title p {
     margin-bottom: 0.7em;
     letter-spacing: 0.8px;
-    font-size: 19px;
+    font-size: 18.5px;
     line-height: 2.3rem;
   }
   .services .services-title h1 {
@@ -791,7 +796,7 @@ footer .footer-links ul li a:hover {
   }
   .skills .container .skills-left p {
     letter-spacing: 0.8px;
-    font-size: 19px;
+    font-size: 18.5px;
     line-height: 2.3rem;
   }
   .skills .container .skills-right .skillset p {
