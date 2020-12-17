@@ -614,10 +614,10 @@ footer .footer-links ul li a:hover {
     height: 18.6em;
     width: 19em;
   }
-  .contact h2 {
+  #contact h2 {
     font-size: 2.5em;
   }
-  .contact .contact-right {
+  #contact .contact-right {
     font-size: 1.4em;
   }
 }
@@ -636,32 +636,32 @@ footer .footer-links ul li a:hover {
 }
 
 @media (max-width: 992px) {
-  .work .work-text {
+  #work .work-text {
     padding: 0;
   }
-  .work .work-text span {
+  #work .work-text span {
     font-size: 1.2rem;
   }
-  .work .work-text h3 {
+  #work .work-text h3 {
     font-size: 2.2rem;
   }
-  .work .work-projects {
+  #work .work-projects {
     padding-top: 3rem;
   }
-  .work .work-projects .projects:nth-child(2n) {
+  #work .work-projects .projects:nth-child(2n) {
     margin-top: -8rem;
   }
-  .work .work-projects .work-technologys {
+  #work .work-projects .work-technologys {
     margin: 0;
   }
-  .work .work-projects .work-technologys .work-technologys__tools {
+  #work .work-projects .work-technologys .work-technologys__tools {
     width: 100%;
     border-radius: 10px 10px 10px 10px;
   }
-  .work .work-projects .work-technologys .work-technologys__tools .tool-name {
+  #work .work-projects .work-technologys .work-technologys__tools .tool-name {
     padding: 10px;
   }
-  .contact .container {
+  #contact .container {
     display: block;
   }
 }
@@ -756,43 +756,43 @@ footer .footer-links ul li a:hover {
     margin-left: 0;
   }
   /* Latest Work */
-  .work {
+  #work {
     padding-top: 1.75rem;
   }
-  .work .container {
+  #work .container {
     width: auto;
   }
-  .work .work-text {
+  #work .work-text {
     padding: 0;
     text-align: center;
   }
-  .work .work-text h3 {
+  #work .work-text h3 {
     font-size: 1.6rem;
     margin-top: 1rem;
   }
-  .work .work-projects {
+  #work .work-projects {
     /* margin: 3rem 0; */
     display: block;
     padding-top: 6.7rem;
   }
-  .work .work-projects .projects {
+  #work .work-projects .projects {
     width: fit-content;
   }
-  .work .work-projects .projects .projects__caption .projects__caption--name {
+  #work .work-projects .projects .projects__caption .projects__caption--name {
     font-size: 1.2em;
     margin-bottom: 0.6rem;
   }
-  .work .work-projects .projects:nth-child(2n) {
+  #work .work-projects .projects:nth-child(2n) {
     margin-top: 0;
   }
-  .work .work-projects .work-technologys {
+  #work .work-projects .work-technologys {
     margin: 85px 0 0 0;
     width: 97.2vw;
   }
-  .work .work-projects .work-technologys .work-technologys__tools {
+  #work .work-projects .work-technologys .work-technologys__tools {
     width: 100%;
   }
-  .work .work-projects .work-technologys .work-technologys__tools .tool img {
+  #work .work-projects .work-technologys .work-technologys__tools .tool img {
     width: 25px;
   }
   /*Skills*/
@@ -813,17 +813,17 @@ footer .footer-links ul li a:hover {
     line-height: 2.4rem;
   }
   /*Contact*/
-  .contact {
+  #contact {
     padding: 3.7rem 0 2rem;
   }
-  .contact .contact-left {
+  #contact .contact-left {
     width: 100%;
   }
-  .contact .contact-left h2 {
+  #contact .contact-left h2 {
     font-size: 1.56em;
     margin-bottom: 20px;
   }
-  .contact .contact-right {
+  #contact .contact-right {
     font-size: 1.1em;
     line-height: 1.9rem;
   }
