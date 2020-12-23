@@ -49,6 +49,10 @@ body {
   margin-left: 7%;
 }
 
+.image .container .image-preview img {
+  width: 100%;
+}
+
 .video {
   display: flex;
   justify-content: center;
