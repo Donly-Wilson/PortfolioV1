@@ -442,19 +442,52 @@ a {
   z-index: 1;
 }
 
-#work .work-projects .work-technologys .work-technologys__tools li {
+#work .work-projects .work-technologys .work-technologys__tools .tool {
   list-style: none;
   padding: 0.5rem;
   display: inline-block;
   transition: 0.4s;
 }
 
-#work .work-projects .work-technologys .work-technologys__tools li:hover {
+#work .work-projects .work-technologys .work-technologys__tools .tool .icon .icon_inverted {
+  filter: invert(1);
+}
+
+#work .work-projects .work-technologys .work-technologys__tools .tool .tool_text {
+  position: absolute;
+  width: 120px;
+  background-color: rgba(164, 99, 242, 0.95);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  z-index: 1;
+  border-radius: 6px;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -55px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  visibility: hidden;
+}
+
+#work .work-projects .work-technologys .work-technologys__tools .tool .tool_text::after {
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgba(164, 99, 242, 0.95) transparent transparent transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+}
+
+#work .work-projects .work-technologys .work-technologys__tools .tool:hover {
   transform: translateY(-6px);
 }
 
-#work .work-projects .work-technologys .work-technologys__tools .icon .icon_inverted {
-  filter: invert(1);
+#work .work-projects .work-technologys .work-technologys__tools .tool:hover .tool_text {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*Skills*/
