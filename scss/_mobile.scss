@@ -21,7 +21,7 @@
       }
     }
   }
-  .contact {
+  #contact {
     h2 {
       font-size: 2.5em;
     }
@@ -47,7 +47,7 @@
 }
 
 @media (max-width: 992px) {
-  .work {
+  #work {
     .work-text {
       padding: 0;
       span {
@@ -74,7 +74,7 @@
       }
     }
   }
-  .contact {
+  #contact {
     .container {
       display: block;
     }
@@ -182,7 +182,7 @@
   }
 
   /* Latest Work */
-  .work {
+  #work {
     padding-top: 1.75rem;
     // padding-bottom: 8.75rem;
     .container {
@@ -249,7 +249,7 @@
   }
 
   /*Contact*/
-  .contact {
+  #contact {
     padding: 3.7rem 0 2rem;
     .contact-left {
       width: 100%;

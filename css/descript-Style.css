@@ -49,6 +49,15 @@ body {
   margin-left: 7%;
 }
 
+.image .container .image-info ul li img {
+  width: 31%;
+  vertical-align: bottom;
+}
+
+.image .container .image-preview img {
+  width: 100%;
+}
+
 .video {
   display: flex;
   justify-content: center;

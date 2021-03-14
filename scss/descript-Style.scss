@@ -41,7 +41,14 @@ body {
         li + li {
           margin-left: 7%;
         }
+        li img {
+          width: 31%;
+          vertical-align: bottom;
+        }
       }
+    }
+    .image-preview img {
+      width: 100%;
     }
   }
 }

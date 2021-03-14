@@ -9,11 +9,9 @@
   padding: 0;
 }
 
-// html {
-// width: 100%;
-// height: 100%;
-// margin: 0px auto;
-// }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   // background: linear-gradient(
@@ -271,7 +269,7 @@ a {
 }
 
 /* Latest Work */
-.work {
+#work {
   padding-top: 8.75rem;
   padding-bottom: 8.75rem;
   .container {
@@ -340,6 +338,9 @@ a {
           img {
             border-radius: 10px;
             transform: scale(1.1);
+          }
+          & ~ .projects__caption .projects__caption--name {
+            color: $secondary-color;
           }
         }
         .projects__image--description {
@@ -428,18 +429,49 @@ a {
         border-radius: 2px 0 0 2px;
         // box-shadow: 0 24px 24px rgba(0, 0, 0, 0.17);
         z-index: 1;
-        li {
+        .tool {
           list-style: none;
           padding: 0.5rem;
           display: inline-block;
           transition: 0.4s;
+          .icon {
+            .icon_inverted {
+              filter: invert(1);
+            }
+          }
+          .tool_text {
+            position: absolute;
+            width: 120px;
+            background-color: hsla(267.3, 84.6%, 66.9%, 0.95);
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            z-index: 1;
+            border-radius: 6px;
+            bottom: 110%;
+            left: 50%;
+            margin-left: -55px;
+            opacity: 0;
+            transition: opacity 0.4s;
+            visibility: hidden;
+            &::after {
+              position: absolute;
+              content: "";
+              border-style: solid;
+              border-width: 5px;
+              border-color: hsla(267.3, 84.6%, 66.9%, 0.95) transparent
+                transparent transparent;
+              top: 100%;
+              left: 50%;
+              margin-left: -5px;
+            }
+          }
           &:hover {
             transform: translateY(-6px);
-          }
-        }
-        .icon {
-          .icon_inverted {
-            filter: invert(1);
+            .tool_text {
+              visibility: visible;
+              opacity: 1;
+            }
           }
         }
       }
@@ -490,7 +522,7 @@ a {
 }
 
 /*Contact*/
-.contact {
+#contact {
   background-color: #262626;
   height: 100%;
   padding: 4.7rem 0;
