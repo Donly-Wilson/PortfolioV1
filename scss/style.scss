@@ -438,6 +438,10 @@ a {
             .icon_inverted {
               filter: invert(1);
             }
+            &__shopify {
+              width: 24px;
+              height: 24px;
+            }
           }
           .tool_text {
             position: absolute;
