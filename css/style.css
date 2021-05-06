@@ -173,10 +173,6 @@ a {
 }
 
 /* Services I Offer */
-.services {
-  height: 100vh;
-}
-
 .services .container {
   display: flex;
   justify-content: center;
@@ -348,12 +344,7 @@ a {
   transform: scale(1.1);
 }
 
-#work
-  .work-projects
-  .projects
-  .projects__image:hover
-  ~ .projects__caption
-  .projects__caption--name {
+#work .work-projects .projects .projects__image:hover ~ .projects__caption .projects__caption--name {
   color: #a463f2;
 }
 
@@ -375,31 +366,17 @@ a {
   transition: opacity 0.4s;
 }
 
-#work
-  .work-projects
-  .projects
-  .projects__image
-  .projects__image--description:hover {
+#work .work-projects .projects .projects__image .projects__image--description:hover {
   opacity: 1;
   transition: opacity 0.5s;
 }
 
-#work
-  .work-projects
-  .projects
-  .projects__image
-  .projects__image--description
-  h3 {
+#work .work-projects .projects .projects__image .projects__image--description h3 {
   font-size: 32px;
   line-height: 2.4em;
 }
 
-#work
-  .work-projects
-  .projects
-  .projects__image
-  .projects__image--description
-  p {
+#work .work-projects .projects .projects__image .projects__image--description p {
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 2.3rem;
@@ -425,11 +402,7 @@ a {
   display: inline-block;
 }
 
-#work
-  .work-projects
-  .projects
-  .projects__caption
-  .projects__caption--tool:hover {
+#work .work-projects .projects .projects__caption .projects__caption--tool:hover {
   transform: translateY(-5px);
   color: #8934ee;
 }
@@ -438,11 +411,9 @@ a {
   font-size: 1.1em;
 }
 
-#work
-  .work-projects
-  .projects:nth-last-child(-n + 3)
-  .projects__caption
-  .projects__caption--tool:hover {
+#work .work-projects .projects:nth-last-child(-n + 3)
+.projects__caption
+.projects__caption--tool:hover {
   color: #a463f2;
 }
 
@@ -478,22 +449,16 @@ a {
   transition: 0.4s;
 }
 
-#work
-  .work-projects
-  .work-technologys
-  .work-technologys__tools
-  .tool
-  .icon
-  .icon_inverted {
+#work .work-projects .work-technologys .work-technologys__tools .tool .icon .icon_inverted {
   filter: invert(1);
 }
 
-#work
-  .work-projects
-  .work-technologys
-  .work-technologys__tools
-  .tool
-  .tool_text {
+#work .work-projects .work-technologys .work-technologys__tools .tool .icon__shopify {
+  width: 24px;
+  height: 24px;
+}
+
+#work .work-projects .work-technologys .work-technologys__tools .tool .tool_text {
   position: absolute;
   width: 120px;
   background-color: rgba(164, 99, 242, 0.95);
@@ -510,12 +475,7 @@ a {
   visibility: hidden;
 }
 
-#work
-  .work-projects
-  .work-technologys
-  .work-technologys__tools
-  .tool
-  .tool_text::after {
+#work .work-projects .work-technologys .work-technologys__tools .tool .tool_text::after {
   position: absolute;
   content: "";
   border-style: solid;
@@ -530,12 +490,7 @@ a {
   transform: translateY(-6px);
 }
 
-#work
-  .work-projects
-  .work-technologys
-  .work-technologys__tools
-  .tool:hover
-  .tool_text {
+#work .work-projects .work-technologys .work-technologys__tools .tool:hover .tool_text {
   visibility: visible;
   opacity: 1;
 }
@@ -938,6 +893,6 @@ footer .footer-links ul li a:hover {
 
 @media (orientation: landscape) {
   .intro {
-    /* height: auto; */
+    height: auto;
   }
 }
