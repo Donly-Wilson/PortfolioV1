@@ -52,16 +52,34 @@ a {
 
 /*  Header  */
 .header {
+  height: 3em;
+  font-size: 1.2rem;
+  margin: 0px auto;
+  position: fixed;
+  padding: 0.31em;
+  width: 100%;
+  z-index: 3;
+  transition: 0.3s all ease-in-out;
+  /* Navigation */
+}
+
+.header.sticky {
+  background: #fff;
+  padding: 0.71em 0.31em;
+  box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+}
+
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   flex-direction: row;
-  height: 3em;
-  font-size: 1.2rem;
-  margin: 0px auto;
-  padding: 0.31em;
-  width: 82%;
-  /* Navigation */
+  padding: 0;
+  height: 100%;
+}
+
+.header .header-logo {
+  align-self: center;
 }
 
 .header .header-menu-btn {
@@ -118,9 +136,18 @@ a {
   transition-delay: 0.01s;
 }
 
+.header .header-nav {
+  height: 100%;
+}
+
 .header .header-nav .header-nav__navbar {
+  height: 100%;
   display: flex;
   list-style: none;
+}
+
+.header .header-nav .header-nav__navbar li {
+  align-self: center;
 }
 
 .header .header-nav .header-nav__navbar .active {
@@ -129,6 +156,25 @@ a {
 
 .header .header-nav .header-nav__navbar a:hover {
   color: #a463f2;
+}
+
+.header .header-nav .header-nav__navbar .resume {
+  align-self: center;
+  border: 1px solid #a463f2;
+  border-radius: 5px;
+  transition: 0.25s ease-in-out;
+}
+
+.header .header-nav .header-nav__navbar .resume a {
+  color: #a463f2;
+  margin: 0;
+  padding: 3px 20px;
+  display: inline-block;
+}
+
+.header .header-nav .header-nav__navbar .resume a:hover {
+  color: #fff;
+  background: #a463f2;
 }
 
 .header a {
@@ -144,7 +190,7 @@ a {
   justify-content: flex-start;
   align-items: stretch;
   flex-direction: row;
-  padding: 12rem 0 7rem;
+  padding: 14rem 0 7rem;
 }
 
 .intro .container {
@@ -734,11 +780,15 @@ footer .footer-links ul li a:hover {
   /* Header */
   .header {
     flex-wrap: wrap;
-    position: relative;
+    position: fixed;
+  }
+  .header.sticky {
+    padding: 0.31em;
   }
   .header .header-menu-btn {
     display: block;
     z-index: 1;
+    align-self: center;
   }
   .header .header-nav {
     background-color: #fff;
@@ -746,10 +796,11 @@ footer .footer-links ul li a:hover {
     pointer-events: none;
     position: absolute;
     padding: 32px;
-    right: -21px;
+    right: 11px;
     top: 11px;
     width: 230px;
     transform: translateY(10px);
+    height: fit-content;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
   .header .header-nav .header-nav__navbar {
@@ -757,6 +808,7 @@ footer .footer-links ul li a:hover {
   }
   .header .header-nav .header-nav__navbar li {
     margin-bottom: 1rem;
+    width: 110px;
   }
   .header .active {
     opacity: 1;

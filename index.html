@@ -63,23 +63,27 @@
   <div class="content">
     <!--Navigation-->
     <header class="header">
-      <div class="header-logo">
-        <a class="logo" href="index.html">Donly Wilson</a>
-      </div>
-      <div class="header-menu-btn">
-        <div class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
+      <div class="container">
+        <div class="header-logo">
+          <a class="logo" href="index.html">Donly Wilson</a>
         </div>
+        <div class="header-menu-btn">
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-nav__navbar">
+            <li><a class="header-nav__link active" href="#">about</a></li>
+            <li><a class="header-nav__link" href="#service">services</a></li>
+            <li><a class="header-nav__link" href="#work">Projects</a></li>
+            <li><a class="header-nav__link" href="#contact">contact</a></li>
+            <li class="resume"><a class="header-nav__link" href="#" download>resume</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header-nav">
-        <ul class="header-nav__navbar">
-          <li><a class="header-nav__link active" href="#">about</a></li>
-          <li><a class="header-nav__link" href="#work">work</a></li>
-          <li><a class="header-nav__link" href="#contact">contact</a></li>
-        </ul>
-      </nav>
     </header>
     <!--Introduction-->
     <section class="intro">
@@ -101,7 +105,7 @@
       </div>
     </section>
     <!--Services I Offer-->
-    <section class="services">
+    <section id="service" class="services">
       <div class="container">
         <div class="services-title">
           <span>My best services</span>
@@ -144,21 +148,7 @@
           </h3>
         </div>
         <div class="work-projects">
-          <div class="projects">
-            <a href="./projects/description-candyRush.html">
-              <div class="projects__image">
-                <img src="./img/candyRush-email.jpg" alt="" srcset="" />
-                <div class="projects__image--description">
-                  <h3>Brief Description</h3>
-                  <p>Warm welcoming email and a percentage discount for new members who subscribe to Candy Rush
-                    newsletter.</p>
-                </div>
-              </div>
-              <div class="projects__caption">
-                <h3 class=" projects__caption--name">Candy Rush</h3>
-              </div>
-            </a>
-          </div>
+
           <div class="projects">
             <a href="./projects/description.html">
               <div class="projects__image">
@@ -171,21 +161,6 @@
               </div>
               <div class="projects__caption">
                 <h3 class="projects__caption--name">Multi-Mob</h3>
-              </div>
-            </a>
-          </div>
-          <div class="projects">
-            <a href="./projects/description-SmartFiit.html">
-              <div class="projects__image">
-                <img src="./img/Smartfiit2.jpg" alt="" srcset="" />
-                <div class="projects__image--description">
-                  <h3>Brief Description</h3>
-                  <p>SmartFiit is a shopify theme build from scratch making use of shopify's api and new liquid
-                    language.</p>
-                </div>
-              </div>
-              <div class="projects__caption">
-                <h3 class=" projects__caption--name">SmartFiit</h3>
               </div>
             </a>
           </div>
@@ -205,6 +180,21 @@
             </a>
           </div>
           <div class="projects">
+            <a href="./projects/description-SmartFiit.html">
+              <div class="projects__image">
+                <img src="./img/Smartfiit2.jpg" alt="" srcset="" />
+                <div class="projects__image--description">
+                  <h3>Brief Description</h3>
+                  <p>SmartFiit is a shopify theme build from scratch making use of shopify's api and new liquid
+                    language.</p>
+                </div>
+              </div>
+              <div class="projects__caption">
+                <h3 class=" projects__caption--name">SmartFiit</h3>
+              </div>
+            </a>
+          </div>
+          <div class="projects">
             <a href="./projects/description-MasCasas.html">
               <div class="projects__image">
                 <img src="./img/MascasasMac2.jpg" alt="" srcset="" />
@@ -215,6 +205,21 @@
               </div>
               <div class="projects__caption">
                 <h3 class=" projects__caption--name">Más Casas</h3>
+              </div>
+            </a>
+          </div>
+          <div class="projects">
+            <a href="./projects/description-candyRush.html">
+              <div class="projects__image">
+                <img src="./img/candyRush-email.jpg" alt="" srcset="" />
+                <div class="projects__image--description">
+                  <h3>Brief Description</h3>
+                  <p>Warm welcoming email and a percentage discount for new members who subscribe to Candy Rush
+                    newsletter.</p>
+                </div>
+              </div>
+              <div class="projects__caption">
+                <h3 class=" projects__caption--name">Candy Rush</h3>
               </div>
             </a>
           </div>

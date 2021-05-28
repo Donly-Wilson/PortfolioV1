@@ -1,4 +1,5 @@
 // Variables
+let header = document.querySelector(".header")
 let menuBtn = document.querySelector(".header-menu-btn");
 let navLinks = document.querySelector(".header-nav");
 let hamburger = document.querySelector(".hamburger");
@@ -42,3 +43,12 @@ document.addEventListener("click", function (e) {
 });
 
 mobileMenu();
+
+
+//Ad sticky nav when menu starts scrolling
+function stickyNav() {
+  window.addEventListener("scroll", () => {
+    header.classList.toggle("sticky", window.scrollY > 0);
+  });
+}
+stickyNav();
