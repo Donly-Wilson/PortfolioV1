@@ -273,7 +273,7 @@ a {
   height: 14em;
   width: 23.5em;
   padding: 0.6em;
-  transition: 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   transition-property: transform;
   transition-delay: 0.4ms;
 }
@@ -296,14 +296,16 @@ a {
   position: absolute;
   left: -15px;
   bottom: 0;
-  width: 0;
+  width: 15px;
+  opacity: 0;
   height: 100%;
   background-color: #a463f2;
-  transition: 0.4s ease-in-out width;
+  transition: 0.3s ease-in width;
 }
 
 .services .services-offer .services-offer__card:hover::before {
   width: 15px;
+  opacity: 1;
 }
 
 .services .services-offer .services-offer__card:hover {
@@ -369,6 +371,27 @@ a {
   margin-bottom: -3px;
 }
 
+#work .work-projects .projects a:hover .projects__image {
+  border-radius: 2px;
+  transform: scale(0.95);
+  transition: 0.4s;
+  width: 100%;
+}
+
+#work .work-projects .projects a:hover .projects__image img {
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+
+#work .work-projects .projects a:hover .projects__image ~ .projects__caption .projects__caption--name {
+  color: #a463f2;
+}
+
+#work .work-projects .projects a:hover .projects__image--description {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
 #work .work-projects .projects .projects__image {
   margin-bottom: 1.5rem;
   width: 100%;
@@ -376,22 +399,6 @@ a {
   position: relative;
   transition: 0.4s;
   overflow: hidden;
-}
-
-#work .work-projects .projects .projects__image:hover {
-  border-radius: 2px;
-  transform: scale(0.95);
-  transition: 0.4s;
-  width: 100%;
-}
-
-#work .work-projects .projects .projects__image:hover img {
-  border-radius: 10px;
-  transform: scale(1.1);
-}
-
-#work .work-projects .projects .projects__image:hover ~ .projects__caption .projects__caption--name {
-  color: #a463f2;
 }
 
 #work .work-projects .projects .projects__image .projects__image--description {
@@ -410,11 +417,6 @@ a {
   place-content: center;
   padding: 70px;
   transition: opacity 0.4s;
-}
-
-#work .work-projects .projects .projects__image .projects__image--description:hover {
-  opacity: 1;
-  transition: opacity 0.5s;
 }
 
 #work .work-projects .projects .projects__image .projects__image--description h3 {
@@ -679,6 +681,12 @@ footer .footer-links ul li a {
 
 footer .footer-links ul li a:hover {
   color: #a463f2;
+}
+
+@media (min-height: 1080px) {
+  .intro {
+    padding: 14rem 0 12rem;
+  }
 }
 
 @media (max-width: 1398px) {
