@@ -75,12 +75,27 @@ a {
 
 /*  Header  */
 .header {
-  @include d-flex(space-between, flex-end);
   height: 3em;
   font-size: 1.2rem;
   margin: 0px auto;
+  position: fixed;
   padding: 0.31em;
-  width: 82%;
+  width: 100%;
+  z-index: 3;
+  transition: 0.3s all ease-in-out;
+  &.sticky {
+    background: #fff;
+    padding: 0.71em 0.31em;
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+  }
+  .container {
+    @include d-flex(space-between, flex-end);
+    padding: 0;
+    height: 100%;
+  }
+  .header-logo {
+    align-self: center;
+  }
   .header-menu-btn {
     display: none;
     height: 60%;
@@ -129,14 +144,35 @@ a {
   }
   /* Navigation */
   .header-nav {
+    height: 100%;
     .header-nav__navbar {
+      height: 100%;
       display: flex;
       list-style: none;
+      li {
+        align-self: center;
+      }
       .active {
         color: $secondary-color;
       }
       & a:hover {
         color: $secondary-color;
+      }
+      .resume {
+        align-self: center;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        transition: 0.25s ease-in-out;
+        a {
+          color: $secondary-color;
+          margin: 0;
+          padding: 3px 20px;
+          display: inline-block;
+        }
+        & a:hover {
+          color: #fff;
+          background: $secondary-color;
+        }
       }
     }
   }
@@ -151,7 +187,7 @@ a {
 .intro {
   height: calc(100vh - 3rem);
   @include d-flex();
-  padding: 12rem 0 7rem;
+  padding: 14rem 0 7rem;
   .container {
     @include d-flex($content: center, $direction: column);
   }
@@ -216,7 +252,7 @@ a {
       height: 14em;
       width: 23.5em;
       padding: 0.6em;
-      transition: 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
       transition-property: transform;
       transition-delay: 0.4ms;
       h2 {
@@ -235,13 +271,16 @@ a {
         position: absolute;
         left: -15px;
         bottom: 0;
-        width: 0;
+        // width: 0;
+        width: 15px;
+        opacity: 0;
         height: 100%;
         background-color: #a463f2;
-        transition: 0.4s ease-in-out width;
+        transition: 0.3s ease-in width;
       }
       &:hover::before {
         width: 15px;
+        opacity: 1;
       }
 
       &:hover {
@@ -321,6 +360,27 @@ a {
         transition: 0.4s;
         margin-bottom: -3px;
       }
+      a {
+        &:hover {
+          .projects__image {
+            border-radius: 2px;
+            transform: scale(0.95);
+            transition: 0.4s;
+            width: 100%;
+            img {
+              border-radius: 10px;
+              transform: scale(1.1);
+            }
+            & ~ .projects__caption .projects__caption--name {
+              color: $secondary-color;
+            }
+          }
+          .projects__image--description {
+            opacity: 1;
+            transition: opacity 0.5s;
+          }
+        }
+      }
       .projects__image {
         // border-radius: 10px;
         margin-bottom: 1.5rem;
@@ -330,19 +390,19 @@ a {
         transition: 0.4s;
         overflow: hidden;
         // box-shadow: 0 24px 24px rgba(0, 0, 0, 0.16);
-        &:hover {
-          border-radius: 2px;
-          transform: scale(0.95);
-          transition: 0.4s;
-          width: 100%;
-          img {
-            border-radius: 10px;
-            transform: scale(1.1);
-          }
-          & ~ .projects__caption .projects__caption--name {
-            color: $secondary-color;
-          }
-        }
+        // &:hover {
+        //   border-radius: 2px;
+        //   transform: scale(0.95);
+        //   transition: 0.4s;
+        //   width: 100%;
+        //   img {
+        //     border-radius: 10px;
+        //     transform: scale(1.1);
+        //   }
+        //   & ~ .projects__caption .projects__caption--name {
+        //     color: $secondary-color;
+        //   }
+        // }
         .projects__image--description {
           font-family: $ff-primary;
           background-color: rgba(50, 100, 160, 0.5);
@@ -359,10 +419,10 @@ a {
           place-content: center;
           padding: 70px;
           transition: opacity 0.4s;
-          &:hover {
-            opacity: 1;
-            transition: opacity 0.5s;
-          }
+          // &:hover {
+          //   opacity: 1;
+          //   transition: opacity 0.5s;
+          // }
           h3 {
             font-size: 32px;
             line-height: 2.4em;
@@ -529,6 +589,7 @@ a {
 #contact {
   background-color: #262626;
   height: 100%;
+  // padding: 8.7rem 0;
   padding: 4.7rem 0;
   .container {
     height: 100%;
@@ -595,6 +656,12 @@ footer {
         }
       }
     }
+  }
+}
+
+@media (min-height: 1080px) {
+  .intro {
+    padding: 14rem 0 12rem;
   }
 }
 
